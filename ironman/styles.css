@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Bayon', sans-serif;
+}
+body{
+    height: 100vh;
+    padding: 4vh;
+    background-size: cover;
+    background-color: black;
+    overflow: hidden;
+
+}
+.walp_logoMV{
+    width: 130vh;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.1;
+    filter: blur(1vh);
+    
+
+    
+}
+.view{
+    background-color: rgba(51, 51, 51, 0.466);
+    background-size: cover;
+    height: 100%;
+    border-radius: 3vh;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    flex-direction: column;
+    overflow: hidden;
+    
+
+    
+}
+header{
+    height: 10vh;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    
+}
+.logo{
+    width: 16vh;
+    opacity: 1;
+    position: absolute;
+    left: 4.5vh;
+    top: 1vh;
+    
+    filter: drop-shadow(0vh 0vh 0.9vh  rgb(255, 255, 255));
+}
+.navigation{
+    height: 100%;
+    position: relative;
+    left: 27vh;
+    width: 40%;
+    color: white;
+}
+
+.navList{
+    display: flex;
+    width: 100%;
+    text-transform: uppercase;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+.navList li {
+    background-color: rgb(146, 146, 146);
+    font-size: 2vh;
+    padding: 0vh;
+    width: 21vh;
+    transform: skewX(-10deg);
+    text-align: center;
+    cursor: pointer;
+}
+
+.navList li:hover{
+    animation: forwards 0.5s liAnimate;
+}
+
+@keyframes liAnimate {
+    0%{
+        
+    }
+    100%{
+        border: none;
+        border-radius: 0vh;
+        background-color: rgb(255, 255, 255);
+        filter: drop-shadow(0vh 0vh 1vh rgb(247, 246, 245));
+        font-size: 4vh;
+    }
+}
+
+.navList a{   
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    animation: forwards 1s AnimateLink;
+}
+
+
+.blur_redAndOrange{
+    width: 70vh;
+    height: 70.8vh;
+    position: absolute;
+    opacity: 0.3;
+    top: 10.1%;
+    left: 50%;
+    background-image: linear-gradient(10deg, orange, red);
+    filter: blur(10vh);
+    transform: skew(10deg, 0deg);
+
+    
+}
+
+.container{
+    background-image: url();
+}
+
+.iron_man{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 60%;
+    transform: rotate(-15deg);
+    width: 40vh;
+    filter: drop-shadow(1vh 0vh 1vh black);
+    animation: 12s ironmanAnimate infinite;
+}
+
+@keyframes ironmanAnimate{
+    0%{
+        top: 10%;
+        left: 60%;
+        filter: drop-shadow(1vh 0vh 1vh black);
+    }
+    50%{
+        top: 7%;
+        left: 57%;
+        transform: rotate(-10deg);
+        filter: drop-shadow(0vh 0vh 1vh black);
+    }
+    100%{
+        top: 10%;
+    }
+}
+.tony_stark{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    z-index: 2;
+    width: 60vh;
+    filter: drop-shadow(1vh 0vh 1vh rgb(255, 77, 77)) contrast(1.1);
+    
+}
+.forma{
+    width: 100vh;
+    height: 100vh;
+    background-color: brown;
+    position: relative;
+    left: 70%;
+    transform: skewX(10deg);
+    
+}
+
+.text-description{
+    position: absolute;
+    height: 70vh;
+    width: 50%;
+    top: 20%;
+    font-size: 2vh !important;
+    left: 7%;
+}
+.text-description h2{
+    color :rgba(150, 150, 150, 0.219);
+    font-size: 4vh;
+    height: 1vh;
+    filter: drop-shadow(0vh 0vh 1vh rgb(255, 94, 0));
+}
+.text-description h1{
+    color:rgb(255, 0, 0);
+    font-size: 10vh;
+    
+    
+}
+.text-description p{
+    color: white;
+    text-align: justify;
+    border-radius: 0vh 0vh 1vh 0vh;
+    border-left: none;
+    border-top: none;
+
+}
+
+.text-description button {
+    background-color: transparent;
+    color : rgb(255, 255, 255);
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.089);
+    top: 10%;
+    padding: 1vh;
+    
+    width: 30vh;
+    font-size: 2vh;
+    cursor: pointer;
+    
+    
+}
+.text-description button:hover{
+    animation: buttonAnimate 0.5s forwards;
+}
+@keyframes buttonAnimate {
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: red;
+        width: 50vh;
+        transform: skew(10deg);
+    }
+}
+.social_network{
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    top: 80%;
+    left: 7%;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3.6vh;
+    
+}
+.social_network a{
+    color:white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.social_network i{
+    color: gray;
+    filter: drop-shadow(0vh 0vh 0vh rgb(255, 255, 255));
+    opacity:0.4;
+    
+}
+
+.social_network i:hover{
+    color: rgb(255, 255, 255);
+    animation: social_iconAnimate 0.5s forwards;
+}
+@keyframes social_iconAnimate {
+    0%{
+        filter: drop-shadow(0vh 0vh 0vh rgb(255, 255, 255));
+        opacity: 0.4;
+        transform: rotate(-10deg);
+        
+    }
+    100%{
+        filter: drop-shadow(0vh 0vh 2vh rgb(255, 255, 255));
+        opacity: 1;
+        font-size: 4vh;
+    }
+}
+
+.tony_text {
+    position: absolute;
+    color: rgb(143, 38, 38);
+    top: 31%;
+    opacity: 0.7;
+    font-size: 20vh;
+    width: 86vh;
+    left: 62%;
+    transform: rotate(90deg);
+    filter: drop-shadow(0vh 0vh 1vh rgba(0, 0, 0, 0.466));
+}
